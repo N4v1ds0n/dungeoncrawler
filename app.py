@@ -7,7 +7,19 @@ from flask import render_template
 app = Flask(__name__)
 @app.route("/")
 def home():
-    return 'Why does this work then?'
+    return render_template("home.html")
+
+@app.route('/play_game/')
+def play_game():
+    return render_template('play_game.html')
+
+@app.route("/about/")
+def about():
+    return render_template("about.html")
+
+@app.route("/contact/")
+def contact():
+    return render_template("contact.html")
 
 @app.route('/hello/<name>')
 def hello_there(name = None):
