@@ -20,7 +20,7 @@
 			],
 			"dockerRun": {
 				"env": {
-					"FLASK_APP": "game_app\\__init__.py"
+					"FLASK_APP": "game_app\\webapp.py"
 				}
 			},
 			"python": {
